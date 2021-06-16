@@ -200,7 +200,7 @@
 \newcommand{\abstracttext}[1]{\renewcommand{\@abstracttext}{#1}}
 
 \hypersetup{%    
-  pdfkeywords  = {Technical University Hamburg-Harburg TUHH},  
+  pdfkeywords  = {Hamburg University of Technology (TUHH)},  
   baseurl      = {http://www.tuhh.de/comnets/},
   pdfstartview = {FitH},
   pdfview      = {FitH},
