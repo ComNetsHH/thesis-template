@@ -62,7 +62,7 @@
 \newcommand{\st}[0]{\superscript{st}}
 \newcommand{\nd}[0]{\superscript{nd}}
 \newcommand{\rd}[0]{\superscript{rd}}
-\setkomafont{disposition}{\Huge\normalfont}
+\setkomafont{disposition}{\normalfont}
 \setkomafont{subject}{\Large\normalfont}
 
 % Magic.
