@@ -247,7 +247,7 @@
 
 		\@author
 		
-		Matriculation number \@matno
+		Matriculation number: \@matno
 		
 		\@program
 		\vspace*{1em}
