@@ -239,7 +239,7 @@
 		\href{http://www.tuhh.de/comnets}{\includegraphics[width=5.7cm]{comnets-logo.pdf}}
 	}
 
-	\subject{\vspace*{2cm}\sffamily\bfseries \@thesis}
+	\subject{\vspace*{2cm}\normalfont\bfseries \@thesis}
 
 	\lowertitleback{
 		\@title
