@@ -3,52 +3,42 @@
 \LoadClass[a4paper,open=right,twoside=true,openany,cleardoublepage=empty,parskip=half,headings=normal,BCOR=12mm]{scrreprt}
 
 % Packages.
-\usepackage{etex}
 \usepackage[utf8]{inputenc}
 \usepackage[babel,english=british]{csquotes}
 \usepackage[british]{babel}
 \usepackage[backend=biber,citestyle=ieee,sorting=none,dateabbrev=false,urldate=comp]{biblatex}
-\usepackage[T1]{fontenc}
-\usepackage{marvosym}
 \usepackage{amssymb}
 \usepackage{amsmath}
 \usepackage{amsthm}
-%\usepackage{pxfonts}
-\usepackage{textcomp}
 \usepackage{graphicx}
-\usepackage{color}
-\usepackage{colortbl}
-\usepackage{scrhack}
-\usepackage{listings}
 \usepackage{acronym}
-\usepackage{tikz}
-%\usepackage{subfig}
-\usepackage{pdfpages}
 \usepackage{enumerate}
-\usepackage{listings}
 \usepackage{float}
 \usepackage{microtype}				% Optical margin alignment etc.
-\usepackage{multirow}				% For multirows in tables
-\usepackage{booktabs}				% Nicer tables, for scientific publications
-\usepackage{array}  				% Advanced table features
 \usepackage[a4paper]{geometry}
-\usepackage{todonotes}
-\usepackage{subcaption}
-\usepackage{cancel}
-\usepackage{pdfpages}
-\usepackage{diagbox}
-\usepackage{algorithm}
+\usepackage{tikz}
+\usepackage{listings}
+\usepackage{afterpage}
 \usepackage[binary-units=true]{siunitx}
+
+% Loads user packages
+\include{packages.tex}
+
+\usepackage[plainpages=false,unicode=true,pdftex]{hyperref} % Load last.
+\usepackage{scrhack} % Should always be loaded at the end, overwrites some macros
+
+
+% url setup
+\def\UrlBreaks{\do\/\do-} % Tell url package to break at / and -, too.
+
+% siunitx setup
 \sisetup{range-phrase = \text{--}}
 \DeclareSIUnit{\belmilliwatt}{Bm}
 \DeclareSIUnit{\dBm}{\deci\belmilliwatt}
-\usepackage[noend]{algpseudocode}
-\usepackage{afterpage}
+
 \makeatletter
 \def\BState{\State\hskip-\ALG@thistlm}
 \makeatother
-\usepackage[plainpages=false,unicode=true,pdftex]{hyperref} % Load last.
-\def\UrlBreaks{\do\/\do-} % Tell url package to break at / and -, too.
 
 \raggedbottom  % Fixes too large gap after section titles.
 
