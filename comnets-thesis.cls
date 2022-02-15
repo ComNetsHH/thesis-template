@@ -223,10 +223,8 @@
 	\setlength{\hoffset}{6mm}
 	\pagenumbering{gobble}
 
-	\titlehead{
-		\href{http://www.tuhh.de}{\includegraphics[width=5.8cm]{tuhh-logo.pdf}}
-		\hfill
-		\href{http://www.tuhh.de/comnets}{\includegraphics[width=5.7cm]{comnets-logo.pdf}}
+	\titlehead{		
+		\href{http://www.tuhh.de/comnets}{\includegraphics[width=\textwidth]{comnets-logo-word-mark-cut.pdf}}
 	}
 
 	\subject{\vspace*{2cm}\normalfont\bfseries \@thesis}
