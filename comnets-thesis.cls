@@ -224,7 +224,7 @@
 	\pagenumbering{gobble}
 
 	\titlehead{		
-		\center\href{http://www.tuhh.de/comnets}{\includegraphics[width=.5\textwidth]{comnets-logo-word-mark-cut.pdf}}
+		\href{http://www.tuhh.de/comnets}{\includegraphics[width=.5\textwidth]{comnets-logo-word-mark-cut.pdf}}
 	}
 
 	\subject{\vspace*{2cm}\normalfont\bfseries \@thesis}
