@@ -191,6 +191,9 @@
 \newcommand{\@abstracttext}{}
 \newcommand{\abstracttext}[1]{\renewcommand{\@abstracttext}{#1}}
 
+\newcommand{\@germantitle}{}
+\newcommand{\germantitle}[1]{\renewcommand{\@germantitle}{#1}}
+
 \hypersetup{%    
   pdfkeywords  = {Hamburg University of Technology (TUHH)},  
   baseurl      = {http://www.tuhh.de/comnets/},
@@ -232,7 +235,8 @@
 	\subject{\vspace*{2cm}\normalfont\bfseries \@thesis}
 
 	\lowertitleback{
-		\@title
+		\@title{}\\
+		\@germantitle{}\\
 		\vspace*{1em}
 
 		\@author
