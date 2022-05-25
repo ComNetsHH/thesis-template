@@ -234,12 +234,7 @@
 	\thispagestyle{empty}
 	\clearpage
 	\setlength{\hoffset}{6mm}
-	\pagenumbering{gobble}
-
-	\titlehead{
-		\href{http://www.tuhh.de/comnets}{\includegraphics[width=10cm]{comnets-logo-word-mark.pdf}}
-	}
-
+	\pagenumbering{gobble}	
 	
 	\href{http://www.tuhh.de/comnets}{\includegraphics[width=10cm]{comnets-logo-word-mark.pdf}}\\
 	\vspace*{\fill}
