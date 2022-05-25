@@ -1,0 +1,6 @@
+\ProvidesFile{t1poppins.fd}
+    [2021/29/11 font definitions for T1/poppins.]
+    \DeclareFontFamily{T1}{poppins}{}
+    \DeclareFontShape{T1}{poppins}{l}{n}{<-> poppinsln8t }{}
+    \DeclareFontShape{T1}{poppins}{m}{n}{<-> poppinsmn8t }{}
+\endinput

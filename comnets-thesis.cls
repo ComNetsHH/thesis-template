@@ -22,6 +22,8 @@
 \usepackage[binary-units=true]{siunitx}
 \usepackage{xcolor}
 \definecolor{tuhhblue}{HTML}{00C1D4}
+\usepackage{poppins}
+\pdfmapfile{+Poppins.map}
 
 % Loads user packages
 \include{packages.tex}
@@ -54,7 +56,7 @@
 \newcommand{\st}[0]{\superscript{st}}
 \newcommand{\nd}[0]{\superscript{nd}}
 \newcommand{\rd}[0]{\superscript{rd}}
-% \newcommand\poppinslight[1]{{\usefont{T1}{Poppins-Light}{m}{n} #1 }} 	% does not work, yet
+\newcommand\poppins[1]{{\fontfamily{poppins}\selectfont \lseries Light:  #1 \mseries Medium #1}} 	% does not work, yet
 
 % Title page margins and alignments
 \renewcommand*{\coverpagetopmargin}{3em}
@@ -253,6 +255,7 @@
 
 	{
 		\vspace*{\fill}
+		\poppins{test}
 		\@title{}\\
 		\emph{\@germantitle{}}\\
 		\vspace*{.5em}
