@@ -240,8 +240,8 @@
 	
 	{\Huge\color{tuhhblue}
 		\raggedright
-		\@thesis\\[.5em] 
-		\@author\\
+		\MakeUppercase{\@thesis}\\[.5em] 
+		\MakeUppercase{\@author}\\
 		\rule{.35em}{1pt}\hspace{.1em}\rule{.35em}{1pt}\\[.5em]
 		\@title{}\\
 		[.5em]\@date{}
