@@ -236,7 +236,7 @@
 
 	\lowertitleback{
 		\@title{}\\
-		\@germantitle{}\\
+		\emph{\@germantitle{}}\\
 		\vspace*{1em}
 
 		\@author
