@@ -20,6 +20,9 @@
 \usepackage{listings}
 \usepackage{afterpage}
 \usepackage[binary-units=true]{siunitx}
+\usepackage{xcolor}
+\definecolor{tuhhblue}{HTML}{00C1D4}
+\usepackage{setspace}
 
 % Loads user packages
 \include{packages.tex}
@@ -237,36 +240,44 @@
 		\href{http://www.tuhh.de/comnets}{\includegraphics[width=10cm]{comnets-logo-word-mark.pdf}}
 	}
 
+	
+	\href{http://www.tuhh.de/comnets}{\includegraphics[width=10cm]{comnets-logo-word-mark.pdf}}\\
+	\vspace*{\fill}
+	
+	{\Huge\color{tuhhblue}
+		\raggedright
+		\@thesis\\[.5em] 
+		\@author\\
+		\rule{.35em}{1pt}\hspace{.1em}\rule{.35em}{1pt}\\[.5em]
+		\@title{}\\
+		[.5em]\@date{}
+	}	
 
-	\subject{\vspace*{6cm}\normalfont\raggedright \@thesis}
+	\vspace*{\fill}
+	{\color{tuhhblue}\Large\href{https://www.tuhh.de/}{tuhh.de}}
+	\clearpage
 
-
-	\lowertitleback{
+	{
+		\vspace*{\fill}
 		\@title{}\\
 		\emph{\@germantitle{}}\\
-		\vspace*{1em}
+		\vspace*{.5em}
 
-		\@author
-		
-		Matriculation number: \@matno
-		
+		\@author\\		
+		Matriculation number: \@matno\\		
 		\@program
-		\vspace*{1em}
+		\vspace*{.5em}
 		
-		Hamburg University of Technology
-		
-		Institute of Communication Networks
-
-		\@firstexaminer
-		
-		\@secondexaminer
-		
+		Hamburg University of Technology\\		
+		Institute of Communication Networks\\
+		\@firstexaminer\\		
+		\@secondexaminer\\		
 		\@supervisor
-		\vspace*{1em}
+		\vspace*{.5em}
 
-		Hamburg, \@date
+		Hamburg, \@date	
 	}
-	\maketitle\thispagestyle{empty}
+	\thispagestyle{empty}
 	\clearpage
 	\setlength{\hoffset}{0mm}
 	
