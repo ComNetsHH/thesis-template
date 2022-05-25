@@ -205,7 +205,7 @@
 
 \hypersetup{%    
   pdfkeywords  = {Hamburg University of Technology (TUHH)},  
-  baseurl      = {http://www.tuhh.de/comnets/},
+  baseurl      = {https://www.tuhh.de/comnets},
   pdfstartview = {FitH},
   pdfview      = {FitH},
   linkcolor    = blue,     % links to same page
@@ -235,7 +235,7 @@
 	\setlength{\hoffset}{6mm}
 	\pagenumbering{gobble}	
 	
-	\href{http://www.tuhh.de/comnets}{\includegraphics[width=10cm]{comnets-logo-word-mark.pdf}}\\
+	\href{https://www.tuhh.de/comnets}{\includegraphics[width=10cm]{comnets-logo-word-mark.pdf}}\\
 	\vspace*{\fill}
 	
 	{\Huge\color{tuhhblue}
