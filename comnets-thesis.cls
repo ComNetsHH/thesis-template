@@ -22,7 +22,6 @@
 \usepackage[binary-units=true]{siunitx}
 \usepackage{xcolor}
 \definecolor{tuhhblue}{HTML}{00C1D4}
-\usepackage{setspace}
 
 % Loads user packages
 \include{packages.tex}
