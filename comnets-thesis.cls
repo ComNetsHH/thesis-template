@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{comnets-thesis}
-\LoadClass[a4paper,open=right,twoside=true,openany,cleardoublepage=empty,parskip=half,headings=normal,BCOR=12mm]{scrreprt}
+\LoadClass[a4paper,open=right,twoside=true,openany,cleardoublepage=empty,parskip=half,headings=normal,BCOR=12mm,titlepage=firstiscover]{scrreprt}
 
 % Packages.
 \usepackage[utf8]{inputenc}
@@ -52,6 +52,13 @@
 \newcommand{\st}[0]{\superscript{st}}
 \newcommand{\nd}[0]{\superscript{nd}}
 \newcommand{\rd}[0]{\superscript{rd}}
+% \newcommand\poppinslight[1]{{\usefont{T1}{Poppins-Light}{m}{n} #1 }} 	% does not work, yet
+
+% Title page margins and alignments
+\renewcommand*{\coverpagetopmargin}{3em}
+\renewcommand*{\coverpageleftmargin}{3em}
+\renewcommand*{\coverpagerightmargin}{3em}
+\renewcommand*{\coverpagebottommargin}{3em}
 \setkomafont{disposition}{\normalfont\bfseries}
 \setkomafont{subject}{\Large\normalfont}
 
@@ -227,12 +234,12 @@
 	\pagenumbering{gobble}
 
 	\titlehead{
-		\href{http://www.tuhh.de}{\includegraphics[width=5.8cm]{tuhh-logo.pdf}}
-		\hfill
-		\href{http://www.tuhh.de/comnets}{\includegraphics[width=5.7cm]{comnets-logo.pdf}}
+		\href{http://www.tuhh.de/comnets}{\includegraphics[width=10cm]{comnets-logo-word-mark.pdf}}
 	}
 
-	\subject{\vspace*{2cm}\normalfont\bfseries \@thesis}
+
+	\subject{\vspace*{6cm}\normalfont\raggedright \@thesis}
+
 
 	\lowertitleback{
 		\@title{}\\
