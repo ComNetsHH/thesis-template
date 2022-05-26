@@ -56,7 +56,8 @@
 \newcommand{\st}[0]{\superscript{st}}
 \newcommand{\nd}[0]{\superscript{nd}}
 \newcommand{\rd}[0]{\superscript{rd}}
-\newcommand\poppins[1]{{\fontfamily{poppins}\selectfont \lseries Light:  #1 \mseries Medium #1}} 	% does not work, yet
+\newcommand\lpoppins[1]{{\fontfamily{poppins}\selectfont \lseries #1}} 	
+\newcommand\mpoppins[1]{{\fontfamily{poppins}\selectfont \mseries #1}} 	
 
 % Title page margins and alignments
 \renewcommand*{\coverpagetopmargin}{3em}
@@ -242,20 +243,19 @@
 	
 	{\Huge\color{tuhhblue}
 		\raggedright
-		\MakeUppercase{\@thesis}\\[.5em] 
-		\MakeUppercase{\@author}\\
-		\rule{.35em}{1pt}\hspace{.1em}\rule{.35em}{1pt}\\[.5em]
-		\@title{}\\
-		[.5em]\@date{}
+		\mpoppins{\MakeUppercase{\@thesis}}\\[.5em] 		
+		\mpoppins{\MakeUppercase{\@author}}\\
+		\lpoppins{\rule{.35em}{1pt}}\hspace{.1em}\lpoppins{\rule{.35em}{1pt}}\\[.5em]
+		\lpoppins{\@title{}}\\[.5em]
+		\lpoppins{\@date{}}
 	}	
 
 	\vspace*{\fill}
-	{\color{tuhhblue}\Large\href{https://www.tuhh.de/}{tuhh.de}}
+	{\color{tuhhblue}\Large\lpoppins{\href{https://www.tuhh.de/}{tuhh.de}}}
 	\clearpage
 
 	{
-		\vspace*{\fill}
-		\poppins{test}
+		\vspace*{\fill}		
 		\@title{}\\
 		\emph{\@germantitle{}}\\
 		\vspace*{.5em}
