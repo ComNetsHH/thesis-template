@@ -246,7 +246,7 @@
 		\mpoppins{\MakeUppercase{\@thesis}}\\[.5em] 		
 		\mpoppins{\MakeUppercase{\@author}}\\
 		\lpoppins{\rule{.35em}{1pt}}\hspace{.1em}\lpoppins{\rule{.35em}{1pt}}\\[.5em]
-		\lpoppins{\@title{}}\\[.5em]
+		\lpoppins{\@title{}}\\[1.5em]
 		\lpoppins{\@date{}}
 	}	
 
