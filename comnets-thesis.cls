@@ -58,12 +58,6 @@
 \newcommand{\rd}[0]{\superscript{rd}}
 \newcommand\lpoppins[1]{{\fontfamily{poppins}\selectfont \lseries #1}} 	
 \newcommand\mpoppins[1]{{\fontfamily{poppins}\selectfont \mseries #1}} 	
-
-% Title page margins and alignments
-\renewcommand*{\coverpagetopmargin}{3em}
-\renewcommand*{\coverpageleftmargin}{3em}
-\renewcommand*{\coverpagerightmargin}{3em}
-\renewcommand*{\coverpagebottommargin}{3em}
 \setkomafont{disposition}{\normalfont\bfseries}
 \setkomafont{subject}{\Large\normalfont}
 
@@ -235,7 +229,7 @@
 	}
 	\thispagestyle{empty}
 	\clearpage
-	\setlength{\hoffset}{6mm}
+	\newgeometry{left=60pt,right=120pt,top=30pt,bottom=30pt}
 	\pagenumbering{gobble}	
 	
 	\href{https://www.tuhh.de/comnets}{\includegraphics[width=10cm]{comnets-logo-word-mark.pdf}}\\
@@ -243,16 +237,19 @@
 	
 	{\Huge\color{tuhhblue}
 		\raggedright
-		\mpoppins{\MakeUppercase{\@thesis}}\\[.5em] 		
-		\mpoppins{\MakeUppercase{\@author}}\\
-		\lpoppins{\rule{.35em}{1pt}}\hspace{.1em}\lpoppins{\rule{.35em}{1pt}}\\[.5em]
-		\lpoppins{\@title{}}\\[1.5em]
-		\lpoppins{\@date{}}
+		\mpoppins{\MakeUppercase{\@thesis}}\\[.15em] 		
+		\mpoppins{\MakeUppercase{\@author}}\\[0em] 
+		\lpoppins{\rule{.75em}{1pt}}\\[.5em]
 	}	
+	{\Large\color{tuhhblue}
+		\lpoppins{\@title{}}\\[1em]
+		\lpoppins{\@date{}}
 
-	\vspace*{\fill}
-	{\color{tuhhblue}\Large\lpoppins{\href{https://www.tuhh.de/}{tuhh.de}}}
+		\vspace*{6cm}
+		\lpoppins{\href{https://www.tuhh.de/}{tuhh.de}}
+	}	
 	\clearpage
+	\restoregeometry
 
 	{
 		\vspace*{\fill}		
