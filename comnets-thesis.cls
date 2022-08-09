@@ -19,7 +19,7 @@
 \usepackage{tikz}
 \usepackage{listings}
 \usepackage{afterpage}
-\usepackage[binary-units=true]{siunitx}
+\usepackage{siunitx}
 \usepackage{xcolor}
 \definecolor{tuhhblue}{HTML}{00C1D4}
 \usepackage{poppins}
