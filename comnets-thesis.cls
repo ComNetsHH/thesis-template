@@ -26,7 +26,7 @@
 \pdfmapfile{+Poppins.map}
 
 % Loads user packages
-\include{packages.tex}
+\input{packages.tex}
 
 \usepackage[plainpages=false,unicode=true,pdftex]{hyperref} % Load last.
 \usepackage{scrhack} % Should always be loaded at the end, overwrites some macros
